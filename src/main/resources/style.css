@@ -1,0 +1,58 @@
+/* Définit une couleur de fond pour la fenêtre */
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+.label { /*Texte Pseudo */
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.button {
+    -fx-background-color: #007AFF;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px; /* Réduction de la taille de la police */
+    -fx-padding: 8px 16px; /* Réduction des espaces internes (padding) */
+    -fx-border-radius: 10px; /* Coins arrondis plus petits */
+    -fx-background-radius: 10px; /* Coins arrondis plus petits */
+    -fx-font-family: "Helvetica Neue", Arial, sans-serif;
+    -fx-effect: innershadow( gaussian, rgba(0,0,0,0.15), 5, 0.0, 1, 1 );
+}
+
+.button:hover {
+    -fx-background-color: #0051CC;
+    -fx-cursor: hand;
+}
+
+
+/* Style pour le champ de texte */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Style pour la vue de conversation */
+.text-flow {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-pref-height: 300px;
+    -fx-font-size: 12px;
+}
+
+/* Style pour les pseudos */
+.text-flow .name {
+    -fx-fill: blue;
+    -fx-font-weight: bold;
+}
+
+/* Style pour les messages */
+.text-flow .message {
+    -fx-fill: black;
+    -fx-font-weight: normal;
+}
